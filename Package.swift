@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Resolver",
+    name: "SEONResolver",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_14),
@@ -13,30 +13,31 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Resolver",
-            targets: ["Resolver"]
+            name: "SEONResolver",
+            targets: ["SEONResolver"]
         ),
         .library(
-            name: "Resolver-Static",
+            name: "SEONResolver-Static",
             type: .static,
-            targets: ["Resolver"]
+            targets: ["SEONResolver"]
         ),
         .library(
-            name: "Resolver-Dynamic",
+            name: "SEONResolver-Dynamic",
             type: .dynamic,
-            targets: ["Resolver"]
+            targets: ["SEONResolver"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "Resolver",
+            name: "SEONResolver",
             dependencies: [],
+            path: "Sources/Resolver",
             resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(
             name: "ResolverTests",
-            dependencies: ["Resolver"]
+            dependencies: ["SEONResolver"]
         ),
     ]
 )
