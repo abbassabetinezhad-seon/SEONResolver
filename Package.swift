@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Resolver",
+    name: "SEONResolver",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_14),
@@ -13,16 +13,16 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Resolver",
+            name: "SEONResolver",
             targets: ["Resolver"]
         ),
         .library(
-            name: "Resolver-Static",
+            name: "SEONResolver-Static",
             type: .static,
             targets: ["Resolver"]
         ),
         .library(
-            name: "Resolver-Dynamic",
+            name: "SEONResolver-Dynamic",
             type: .dynamic,
             targets: ["Resolver"]
         ),
