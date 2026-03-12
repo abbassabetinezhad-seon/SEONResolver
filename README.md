@@ -1,4 +1,6 @@
-# Resolver ![icon](https://user-images.githubusercontent.com/709283/32858974-cce8282a-ca12-11e7-944b-c8046156290b.png)
+# SEONResolver
+
+> **Fork notice:** This is a SEON Technologies fork of [Resolver](https://github.com/hmlongco/Resolver) by Michael Long, published under the original MIT license. The only change from upstream is the CocoaPods podspec: `s.resources` has been replaced with `s.resource_bundles` for the `PrivacyInfo.xcprivacy` declaration, which prevents a duplicate privacy manifest build error in apps that use CocoaPods 1.13+ with Xcode 16+.
 
 An ultralight Dependency Injection / Service Locator framework for Swift 5.x on iOS.
 
