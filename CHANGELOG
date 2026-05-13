@@ -1,5 +1,9 @@
 # Resolver Changelog
 
+### 1.5.2
+
+* Fixed distribution issue on Cocoapods + Swift 6.0
+
 ### 1.5.1
 
 * Added privacy manifest.
